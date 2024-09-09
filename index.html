@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青い鳥 - 学祭注文サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>青い鳥</h1>
+        <nav>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">商品一覧</a></li>
+                <li><a href="#">注文履歴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>商品一覧</h2>
+            <div class="product">
+                <h3>商品1</h3>
+                <p>価格: 500円</p>
+                <button onclick="orderProduct('商品1')">リツイート（注文）</button>
+            </div>
+            <div class="product">
+                <h3>商品2</h3>
+                <p>価格: 300円</p>
+                <button onclick="orderProduct('商品2')">リツイート（注文）</button>
+            </div>
+            <!-- 他の商品を追加 -->
+        </section>
+
+        <section id="order-confirmation" style="display: none;">
+            <h2>注文確認</h2>
+            <p id="order-details"></p>
+            <button onclick="closeConfirmation()">OK</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 青い鳥</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
